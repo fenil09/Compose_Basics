@@ -27,33 +27,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-        usemodifier()
+
         }
 
-    }
-
-
-    @Composable
-    fun usemodifier() {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(0.5f)
-                .background(Color.Green)
-                .border(5.dp,Color.Magenta)
-                .padding(5.dp)
-                .border(10.dp,Color.Black)
-                .padding(10.dp)
-                .border(10.dp,Color.Blue)
-                .padding(10.dp)
-                .border(12.dp,Color.Yellow)
-                .padding(12.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
-
-        ) {
-            Text(text = "Hello", color = Color.Black)
-        }
     }
 }
+
+
+
+
+
+
 
